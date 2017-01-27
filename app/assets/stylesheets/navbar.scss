@@ -24,6 +24,12 @@ html {
   background-color: black;
 }
 
+.light{color:white!important;}
+
+ul.nav.navbar-nav{
+  a{color:white;}
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -34,6 +40,7 @@ html {
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
+  /* modify here to adjust the collapsed bar*/
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: black;
