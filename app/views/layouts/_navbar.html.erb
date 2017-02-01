@@ -5,7 +5,7 @@
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                   Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="#page-top">
+              <a class="navbar-brand page-scroll" href="/">
                 <span class="light">Hisentry</span>
               </a>
           </div>
@@ -15,7 +15,7 @@
               <ul class="nav navbar-nav">
                   <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                   <li class="hidden">
-                      <a href="#page-top"></a>
+                      <a href="#"></a>
                   </li>
                   <li>
                       <a class="page-scroll" href="#about">About</a>
@@ -23,9 +23,15 @@
                   <li>
                       <a class="page-scroll" href="#contact">Contact</a>
                   </li>
-                  <li>
-                      <a class="page-scroll">Login</a>
-                  </li>
+                  <% if current_user%>
+                    <li>
+                        <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "page-scroll" %>
+                    </li>
+                  <% else %>
+                    <li>
+                        <a class="page-scroll" href="/users/sign_in">Login</a>
+                    </li>
+                  <% end %>
               </ul>
           </div>
           <!-- /.navbar-collapse -->

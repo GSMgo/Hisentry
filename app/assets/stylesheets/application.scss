@@ -2,3 +2,16 @@
 @import "navbar";
 @import "static_pages";
 @import "fonts";
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Handycheera';
+  color: white;
+  background-color: black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
