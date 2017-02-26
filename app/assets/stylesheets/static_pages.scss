@@ -1,10 +1,8 @@
 
 .intro {
-  display: table;
   width: 100%;
   height: auto;
   padding: 100px 0;
-  text-align: center;
   color: white;
   background: url(bg.jpg) no-repeat bottom center scroll;
   background-color: black;
@@ -13,18 +11,29 @@
   background-size: cover;
   -o-background-size: cover;
 }
-.intro .intro-body {
-  display: table-cell;
-  vertical-align: middle;
+
+.intro {
+  .main-container{
+    height: 100%;
+    max-width: 25rem;
+    min-width: 16rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+    .brand-heading {
+      font-size: 8rem;
+      font-family: "Handycheera";
+    }
+  }
 }
-.intro .intro-body .brand-heading {
-  font-size: 40px;
-  font-family: "Handycheera";
+.intro {
+  .intro-text {
+    font-size: 2rem;
+    font-family: "Handycheera";
+  }
 }
-.intro .intro-body .intro-text {
-  font-size: 18px;
-  font-family: "Handycheera";
-}
+
 @media (min-width: 768px) {
   .intro {
     height: 100%;
@@ -36,12 +45,4 @@
   .intro .intro-body .intro-text {
     font-size: 26px;
   }
-}
-
-.main-center{
-  margin: auto;
-  margin-top: 10vh;
-  max-width: 330px;
-  padding: 25px;
-  border: 1px solid black;
 }
