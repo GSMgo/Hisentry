@@ -19,9 +19,11 @@
 }
 .intro .intro-body .brand-heading {
   font-size: 40px;
+  font-family: "Handycheera";
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
+  font-family: "Handycheera";
 }
 @media (min-width: 768px) {
   .intro {
@@ -34,4 +36,12 @@
   .intro .intro-body .intro-text {
     font-size: 26px;
   }
+}
+
+.main-center{
+  margin: auto;
+  margin-top: 10vh;
+  max-width: 330px;
+  padding: 25px;
+  border: 1px solid black;
 }
